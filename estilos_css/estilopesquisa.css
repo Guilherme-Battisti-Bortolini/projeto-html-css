@@ -1,0 +1,64 @@
+@charset "utf-8";
+#topo {
+	background-image:url(banner.webp);
+	height:220px;
+	
+}
+#conteudo {
+	background-image:url(fundo.jpg);
+	width:1330px;
+	float:left;
+	height:1684px;
+	margin-top:10px;
+	
+}
+body {
+    background-image:url(fundo1.jpg);
+
+}
+fieldset{
+    background-image:url(fundotabela.jpg);
+	margin: 0 auto;
+	width: 800px;
+	padding: 10px;
+}
+.menor{
+	width:700px;
+}
+a{
+    text-decoration: none;
+}
+#voltar{
+    font-family: Verdana;
+    color:black;
+    padding: 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+#voltar a:hover{
+    background-color:yellow;
+    color:black;
+    padding: 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+fieldset{
+    font-family: Verdana;
+}
+h1{
+    text-align: center;
+}
+.box{
+    border-radius: 10px;
+    text-align: center;
+}
+#data{
+
+    text-align: right;
+}
+#email{
+    text-align: right;
+}

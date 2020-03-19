@@ -1,0 +1,44 @@
+@charset "utf-8";
+#topo {
+	background-image:url(banner.webp);
+	height:220px;
+	
+}
+#conteudo {
+	background-image:url(fundo.jpg);
+	width:1330px;
+	float:left;
+	height:580px;
+	margin-top:10px;
+	
+}
+body {
+    background-image:url(fundo1.jpg);
+
+}
+fieldset{
+    background-image:url(fundotabela.jpg);
+	
+	width: 400px;
+	padding: 10px;
+}
+#voltar{
+    font-family: Verdana;
+    color:black;
+    padding: 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+#voltar a:hover{
+    background-color:yellow;
+    color:black;
+    padding: 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="descripton" content="Página">
+    <meta name="keywords" content="html,css">
+    <meta name="aothor" content="Pablo Gabriel/Guilherme">
+    <link rel="stylesheet" href="estilopesquisa.css">
+    <title>Pesquisa</title>
+</head>
+<body>
+    <div id="geral">
+    <div id="topo"></div>
+    <div id="conteudo">
+      <nav id="voltar"><a href="index.html">Voltar página principal</a></nav>
+    
+    <h1>Formularios de Pesquisa</h1>
+		<form action="exemplo.php" method="post"
+		name="dados" id="form1">
+		<fieldset>
+			<legend><h2>DADOS PESSOAIS:</h2></legend>
+			<nav>NOME:<input class="box" type="text" id="txtnome" pattern="[A-Za-z]{2,30}" name="txtnome" placeholder="nome"></nav>
+			<br>
+			<nav>DATA DE NACIMENTO:<input class="box" type="date" name="nascimento" placeholder="Data de nascimento"></nav>
+			<br>
+			<nav>IDADE:<input class="box" type="text" id="txtidade" name="txtidade" pattern="[0-9]{1,2}" placeholder="idade"></nav>
+			<br>
+			<nav id="email">EMAIL:<input class="box"  type="email" id="txtmail" name="txtmail" placeholder="E-mail"></nav>
+			<br>
+			<nav id="data">(data e hora):<input class="box"  type="datetime-local" name="agenda"></nav>
+			<br>
+			<fieldset class="menor">
+				<legend>Selecione seu sexo</legend>
+				<input type="radio" name="rdgsexo" id="rdgsexo1" value="m" checked="checked">Masculino<br>
+				<input type="radio" name="rdgsexo" id="rdgsexo2" value="f">Feminino<br>
+        </fieldset>	
+        <fieldset>
+            <legend><h2>DADOS DO PET:</h2></legend>
+		<fieldset class="menor">
+			<legend>Quais os seus Pets:</legend>
+			<input type="checkbox" name="ckinter" id="ckinter1" value="Cachorro">Cachorro<br>
+			<input type="checkbox" name="ckinter" id="ckinter2" value="Gato">Gato<br>
+            <input type="checkbox" name="ckinter" id="ckinter3" value="Peixe">Peixe<br>
+            <input type="checkbox" name="ckinter" id="ckinter4" value="Passarinho">Passarinho<br>
+            <input type="checkbox" name="ckinter" id="ckinter5" value="Outros">Outros<br>
+        </fieldset>
+        <fieldset class="menor">
+            <legend>Selecione o sexo do seu Pet:</legend>
+            <input type="radio" name="rdgsexo" id="rdgsexo1" value="m" checked="checked">Macho<br>
+            <input type="radio" name="rdgsexo" id="rdgsexo2" value="f">Femia<br>
+    </fieldset>	
+    <fieldset class="menor">
+        <legend>Quantas veses leveu seu pet ao veterinrio esse ano:</legend>
+        <input type="checkbox" name="ckinter" id="ckinter1" value="Cachorro">1 a 2 veses.<br>
+        <input type="checkbox" name="ckinter" id="ckinter2" value="Gato">2 a 3 veses.<br>
+        <input type="checkbox" name="ckinter" id="ckinter3" value="Peixe">Mais que 4 veses.<br>
+    </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend><h2>Avaliação dos produtos:</h2></legend>
+            <fieldset class="menor">
+				<legend>você encontrou os produtos que procurava? </legend>
+				<input type="radio" name="rdgsexo" id="rdgsexo1" value="m" checked="checked">Sim<br>
+				<input type="radio" name="rdgsexo" id="rdgsexo2" value="f">Não<br>
+        </fieldset>
+        <fieldset class="menor">
+            <legend>Se encontrou qual sua avaliação sobre ele:</legend>
+            <input type="checkbox" name="ckinter" id="ckinter1" value="Excelente">Excelente.<br>
+            <input type="checkbox" name="ckinter" id="ckinter2" value="Bom">Bom.<br>
+            <input type="checkbox" name="ckinter" id="ckinter3" value="medio">Médio.<br>
+            <input type="checkbox" name="ckinter" id="ckinter4" value="Ruim">Ruim.<br>
+        </fieldset>
+        <fieldset class="menor">
+			<legend>Quais desses produtos você recomendaria para alguem:</legend>
+			<input type="checkbox" name="ckinter" id="ckinter1" value="Royal">Ração Royal Canin<br>
+			<input type="checkbox" name="ckinter" id="ckinter2" value="Tapete">Tapete Higiênico Dog's Care<br>
+            <input type="checkbox" name="ckinter" id="ckinter3" value="Comedouro">Comedouro Automático<br>
+            <input type="checkbox" name="ckinter" id="ckinter4" value="Cortador">Cortador de Unhas Ferplast<br>
+            <input type="checkbox" name="ckinter" id="ckinter5" value="golden">Ração Golden<br>
+            <input type="checkbox" name="ckinter" id="ckinter6" value="Banheiro">Banheiro Chalesco Cat<br>
+        </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend><h2>Avaliação do Site:</h2></legend>
+		<fieldset class="menor">
+			<legend>De uma nota para o site</legend>
+			1<input type="range" name="valores" value="8" min="1" max="10">10<br>
+		</fieldset>
+		<br><hr>
+		
+			<label class="legenda">Selecione uma cidade:</label>
+			<select name="cidade" id="cidade">
+				<option value="poa">Porto Alegre</option>
+				<option value="alv">Quintão</option>
+				<option value="can">Canoas</option>
+			</select>
+			<hr>
+			
+			
+			<label class="legenda">Observações</label><br>
+			<textarea  class="box" name="txtoserv" placeholder="Anote aqui suas observaçõaes" maxlength="500" cols="50" rows="5"></textarea><br>
+			
+			<input type="reset" name="btnlimpar" value="Limpar">
+			<input type="submit" name="btnenviar" id="btnenviar" value="Enviar">
+			
+		</fieldset>
+		</fieldset>
+        <div><span>Copyright 2019-2020  - Todos os direitos reservados</span></div>
+    </div>
+    </div>
+</body>
+</html>
